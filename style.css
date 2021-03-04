@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: calc(100vh - 80px);
+  font-family: Calibri;
+}
+.hero {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  color: aliceblue;
+  background: grey url("./img/cover.jpg") center no-repeat;
+  background-size: cover;
+}
+.name {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #2e2e2e80;
+}
+.hero h2 {
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+}
+.hero h3 {font-size: 20px;}
+.main-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin: 60px auto 30px auto;
+}
+.main-info h2, 
+.skills h2 {font-size: 26px;}
+
+.underline {
+  width: 50px;
+  margin-top: 10px;
+  color: rgba(105,105,105,0.753);
+}
+.logo {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  border: solid 1px lightgray;
+}
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  width: 860px;
+}
+.about {
+  width: 550px;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 3px;
+  border: solid 1px rgba(105,105,105,0.753);
+}
+.title {display: flex;}
+.education {
+  height: 220px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.profile {
+  width: 200px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 3px;
+  border: solid 1px rgba(105,105,105,0.753);
+}
+.profile img {
+  height: auto;
+  width: 80%;
+}
+.contact i {
+  margin-right: 10px;
+  font-size: 25px;
+}
+.profile a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-title {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.contact {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.skills,
+.projects {
+  width: 800px;
+  height: 340px;
+  padding: 20px 30px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border: solid 1px rgba(105,105,105,0.753);
+}
+.skills {height: 400px;}
+.title-logo {
+  margin-right: 15px;
+  font-size: 35px;
+}
+.skills-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.skill {
+  height: 240px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px 20px;
+}
+.skill:nth-child(2) {
+  border-right:solid 1px rgba(105,105,105,0.753);
+  border-left:solid 1px rgba(105,105,105,0.753);
+}
+.skill i {font-size: 28px;}
+.projects {height: 500px;}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+
+}
+.projects-container a {
+  height: 90%;
+  width: 90%;
+  text-decoration: none;
+  color: inherit;
+}
+.project {
+  height: 150px;
+  width: 200px;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  border: solid 1px rgba(105,105,105,0.753);
+}
+.project p {font-size: 14px;}
+
+.projects-container a:hover .project {
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+.social-links {
+  width: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer {
+  height: 80px;
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-top: solid 1px rgba(105,105,105,0.753);
+  background-color: rgb(241, 241, 241);
+}
+
+footer .fab {
+  font-size: 30px;
+  color: black;  
+}
+footer .svg{
+  height: 35px;
+  width: 35px;
+}
+
+.projects-container a:nth-child(1):hover .project {background-image: url(./img/photography.png);}
+.projects-container a:nth-child(2):hover .project {background-image: url(./img/e-commerce.png);}
+.projects-container a:nth-child(3):hover .project {background-image: url(./img/notebox.JPG);}
+.projects-container a:nth-child(4):hover .project {background-image: url(./img/videotube.JPG);}
+.projects-container a:nth-child(5):hover .project {background-image: url(./img/IronThread.JPG);}
+
+.project:hover h3,
+.project:hover p {opacity: 0;}
