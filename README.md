@@ -1,1 +1,1 @@
-### link to deployed page
+https://nitronoised.github.io/rsschool-cv/
